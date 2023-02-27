@@ -1,0 +1,4 @@
+FROM liquibase/liquibase
+RUN lpm add mysql --global
+ADD resources/ /liquibase/changelog
+CMD ["sh", "-c", "docker-entrypoint.sh --url=jdbc:mysql://${TYPEORM_HOST}:${TYPEORM_PORT}/${TYPEORM_DATABASE} --username=${TYPEORM_USERNAME} --password=${TYPEORM_PASSWORD} --classpath=/liquibase/changelog --changeLogFile=migration-change-log.xml update"]

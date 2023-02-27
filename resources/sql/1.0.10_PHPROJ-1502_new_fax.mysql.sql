@@ -1,0 +1,4 @@
+-- liquibase formatted sql
+
+-- changeset ravi:166083736663232-1
+ALTER TABLE FAX_DETAIL ADD TRASHED TINYINT NOT NULL DEFAULT '0';

@@ -1,0 +1,4 @@
+-- liquibase formatted sql
+
+-- changeset vishal:1660837366395-1
+ALTER TABLE FAX_DETAIL ADD PROCESSING_ERRORS MEDIUMTEXT NULL;

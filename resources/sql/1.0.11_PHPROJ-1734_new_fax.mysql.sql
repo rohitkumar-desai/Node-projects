@@ -1,0 +1,4 @@
+-- liquibase formatted sql
+
+-- changeset ravi:1660837366665565-1
+ALTER TABLE `FAX_DETAIL` ADD `OHIP` VARCHAR(50) NULL DEFAULT NULL;

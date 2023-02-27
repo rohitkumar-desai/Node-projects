@@ -1,0 +1,6 @@
+-- liquibase formatted sql
+-- changeset souvik:1666885350154-1
+ 
+ALTER TABLE `FAX_DETAIL` ADD `DOCUMENT_TYPE_CONFIDENCE` VARCHAR(255) NULL DEFAULT NULL; 
+
+-- rollback DROP TABLE FAX_DETAIL
